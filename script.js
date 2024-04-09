@@ -44,9 +44,12 @@ const navstevnici = 174;
 const prijem = Math.round((listok * navstevnici) * 15);
 console.log(prijem);
 
-const studenti = 40 / 100;
+const studenti = 0.4
 const listokStudent = listok * 0.65;
-const predstavenieStudent = navstevnici *studenti;
+const predstavenieStudent = navstevnici * studenti;
+const prijemStudenti = listokStudent * predstavenieStudent * 15;
+const celkovyPrijem = prijem + prijemStudenti;
+console.log(`Celkový príjem divadla je ${Math.round(celkovyPrijem)}`)
 
 
 //2. Schopnejšie zaokrúhľovanie
